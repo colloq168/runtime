@@ -16,6 +16,8 @@
 		830519891CEDB4440021322F /* runtimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830519881CEDB4440021322F /* runtimeTests.m */; };
 		830519941CEDB4440021322F /* runtimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 830519931CEDB4440021322F /* runtimeUITests.m */; };
 		830519A31CEDB6170021322F /* NSObject+CCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 830519A21CEDB6170021322F /* NSObject+CCRuntime.m */; };
+		830519A61CEDB7750021322F /* CCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 830519A51CEDB7750021322F /* CCPerson.m */; };
+		830519A91CEDB9F00021322F /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 830519A81CEDB9F00021322F /* CCTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		830519951CEDB4440021322F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		830519A11CEDB6170021322F /* NSObject+CCRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CCRuntime.h"; sourceTree = "<group>"; };
 		830519A21CEDB6170021322F /* NSObject+CCRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CCRuntime.m"; sourceTree = "<group>"; };
+		830519A41CEDB7750021322F /* CCPcerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPcerson.h; sourceTree = "<group>"; };
+		830519A51CEDB7750021322F /* CCPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPerson.m; sourceTree = "<group>"; };
+		830519A71CEDB9F00021322F /* CCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextField.h; sourceTree = "<group>"; };
+		830519A81CEDB9F00021322F /* CCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,12 @@
 				830519721CEDB4440021322F /* AppDelegate.m */,
 				830519741CEDB4440021322F /* ViewController.h */,
 				830519751CEDB4440021322F /* ViewController.m */,
+				830519A41CEDB7750021322F /* CCPcerson.h */,
+				830519A51CEDB7750021322F /* CCPerson.m */,
 				830519A11CEDB6170021322F /* NSObject+CCRuntime.h */,
 				830519A21CEDB6170021322F /* NSObject+CCRuntime.m */,
+				830519A71CEDB9F00021322F /* CCTextField.h */,
+				830519A81CEDB9F00021322F /* CCTextField.m */,
 				830519771CEDB4440021322F /* Main.storyboard */,
 				8305197A1CEDB4440021322F /* Assets.xcassets */,
 				8305197C1CEDB4440021322F /* LaunchScreen.storyboard */,
@@ -207,6 +217,7 @@
 		830519631CEDB4440021322F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CC;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Chris;
 				TargetAttributes = {
@@ -276,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				830519A31CEDB6170021322F /* NSObject+CCRuntime.m in Sources */,
+				830519A91CEDB9F00021322F /* CCTextField.m in Sources */,
 				830519761CEDB4440021322F /* ViewController.m in Sources */,
 				830519731CEDB4440021322F /* AppDelegate.m in Sources */,
+				830519A61CEDB7750021322F /* CCPerson.m in Sources */,
 				830519701CEDB4440021322F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

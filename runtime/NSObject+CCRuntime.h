@@ -18,10 +18,11 @@
  *  @param otherAction 需要交换的方法
  */
 - (void)exchangeImplementations:(Class)aClass action:(SEL)aAction ohterClass:(Class)otherClass otherAction:(SEL)otherAction;
+
 /**
- *  获取一个类的所有实例变量
+ *  输出一个类的所有实例变量和对应的类型
  *
- *  @param class 需要或取的类
+ *  @param class 需要获取的类
  */
 - (void)getInstanceVarList:(Class)aClass;
 @end

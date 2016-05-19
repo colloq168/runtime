@@ -36,7 +36,7 @@
         
         const char *type = ivar_getTypeEncoding(ivar[i]);
         
-        NSLog(@"name = %s,type = %s",name,type);
+        NSLog(@"name = %s < < =========== > >type = %s",name,type);
     }
 }
 @end

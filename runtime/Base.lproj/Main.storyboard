@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="view" customClass="CCTextField">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_register_background" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-02-Bd0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXg-jg-MY1">
+                                <rect key="frame" x="54" y="287" width="266" height="92"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="cWY-5h-Aem">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="92"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入账号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B0p-WG-x0L" customClass="CCTextField">
+                                        <rect key="frame" x="5" y="0.0" width="256" height="46"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1H-Zz-JS3" customClass="CCTextField">
+                                        <rect key="frame" x="5" y="46" width="256" height="46"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cWY-5h-Aem" secondAttribute="bottom" id="4b9-om-zi5"/>
+                                    <constraint firstAttribute="height" constant="92" id="67d-MA-OAk"/>
+                                    <constraint firstAttribute="trailing" secondItem="cWY-5h-Aem" secondAttribute="trailing" id="6Sg-TV-7ze"/>
+                                    <constraint firstItem="B0p-WG-x0L" firstAttribute="height" secondItem="cWY-5h-Aem" secondAttribute="height" multiplier="0.5" id="A0M-f5-IUz"/>
+                                    <constraint firstAttribute="trailing" secondItem="B0p-WG-x0L" secondAttribute="trailing" constant="5" id="CO0-VX-3Kk"/>
+                                    <constraint firstAttribute="bottom" secondItem="J1H-Zz-JS3" secondAttribute="bottom" id="Fzr-un-b1C"/>
+                                    <constraint firstItem="J1H-Zz-JS3" firstAttribute="leading" secondItem="gXg-jg-MY1" secondAttribute="leading" constant="5" id="GTd-Ai-pCG"/>
+                                    <constraint firstItem="B0p-WG-x0L" firstAttribute="centerX" secondItem="gXg-jg-MY1" secondAttribute="centerX" id="IQO-Qr-9AB"/>
+                                    <constraint firstAttribute="width" constant="266" id="Jod-90-a0j"/>
+                                    <constraint firstAttribute="trailing" secondItem="J1H-Zz-JS3" secondAttribute="trailing" constant="5" id="KUw-fl-CX5"/>
+                                    <constraint firstItem="cWY-5h-Aem" firstAttribute="leading" secondItem="gXg-jg-MY1" secondAttribute="leading" id="a7D-RA-YP9"/>
+                                    <constraint firstItem="B0p-WG-x0L" firstAttribute="leading" secondItem="gXg-jg-MY1" secondAttribute="leading" constant="5" id="dZB-9J-90u"/>
+                                    <constraint firstItem="cWY-5h-Aem" firstAttribute="top" secondItem="gXg-jg-MY1" secondAttribute="top" id="eoS-7L-g6X"/>
+                                    <constraint firstItem="J1H-Zz-JS3" firstAttribute="height" secondItem="B0p-WG-x0L" secondAttribute="height" id="sk6-UH-twe"/>
+                                    <constraint firstItem="B0p-WG-x0L" firstAttribute="top" secondItem="gXg-jg-MY1" secondAttribute="top" id="wHu-hW-2wX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.4431372549" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ia1-02-Bd0" secondAttribute="trailing" id="69x-aM-367"/>
+                            <constraint firstItem="gXg-jg-MY1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ATl-Sb-Ibi"/>
+                            <constraint firstItem="Ia1-02-Bd0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="K3B-eN-FAT"/>
+                            <constraint firstItem="gXg-jg-MY1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="anH-8H-Kgh"/>
+                            <constraint firstItem="Ia1-02-Bd0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="j7v-w5-DOz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ia1-02-Bd0" secondAttribute="bottom" id="qeS-vY-SyS"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="login_register_background" width="320" height="568"/>
+        <image name="login_rgister_textfield_bg" width="266" height="92"/>
+    </resources>
 </document>
